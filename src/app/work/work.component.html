@@ -1,0 +1,88 @@
+<!-- TODO: add links to blue words -->
+<h1>
+  <a>Hello, I’m Anne!</a> I’m a product designer/developer <a>@WaiveTheWait</a> and <a>@RBC</a>. 
+  I care deeply about designing for well-being and inclusivity.   
+</h1>
+
+
+<!-- GALLERY -->
+<input type="radio" id="#All" name="categories" value="#All" checked>
+<input type="radio" id="#ProductDesign" name="categories" value="#ProductDesign">
+<input type="radio" id="#AugmentedReality" name="categories" value="#AugmentedReality">
+<input type="radio" id="#Health" name="categories" value="#Health">
+<input type="radio" id="#Community" name="categories" value="#Community">
+
+
+<ol class="filters">
+    <li>
+      <label for="#All">All Projects</label>
+    </li>
+    <li>
+      <label for="#ProductDesign">Product Design</label>
+    </li>
+    <li>
+      <label for="#AugmentedReality">Augmented Reality</label>
+    </li>
+    <li>
+      <label for="#Health">Health</label>
+    </li>
+    <li>
+      <label for="#Community">Community</label>
+    </li>
+  </ol>
+
+  <ol class="posts">
+    <li class="post" data-category="#AugmentedReality #Community #ProductDesign">
+      <article>
+        <figure>
+          <a routerLink="/work/virtual-branch-support" target="_blank">
+            <img src="assets/images/vbsmock.png" alt="">
+          </a>
+          <figcaption>
+            <a href="" target="_blank">
+              <h2 class="post-title">Virtual Branch Support | AR advising application</h2>
+              <p>AR Product Design</p>
+            </a>
+          </figcaption>
+        </figure>
+       </article>
+    </li>
+    <li class="post" data-category="#ProductDesign #Health">
+      <article>
+        <figure>
+          <a routerLink="/work/waivethewait" target="_blank">
+            <img src="assets/images/wtwmock.png" alt="">
+          </a>
+          <figcaption>
+            <!-- <ol class="post-categories">
+              <li >
+                <a href="https://webdevtrick.com/portfolio-filter-gallery/">...</a>
+              <li>
+            </ol> -->
+            <a href="" target="_blank">
+              <h2 class="post-title">Smart Room | Virtual clinic wait room</h2>
+              <p>Product Design, UI/UX</p>
+            </a>
+          </figcaption>
+        </figure>
+       </article>
+    </li>
+    <li class="post" data-category="#ProductDesign">
+      <article>
+        <figure>
+          <a routerLink="/work/checkr" target="_blank">
+            <img src="assets/images/checkrmock.png" alt="">
+          </a>
+          <figcaption>
+            <a href="" target="_blank">
+              <h2 class="post-title">Checkr | A holistic solution for preventing forgetfulness</h2>
+              <p>Product Design, UI/UX</p>
+            </a>
+          </figcaption>
+        </figure>
+       </article>
+    </li>
+   </ol>
+
+
+

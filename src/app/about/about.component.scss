@@ -1,0 +1,112 @@
+@import "src/styles.scss";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+//main grid
+.about-section{
+    display: grid;
+    grid-template-columns: 15% [content]1fr 15%;
+    grid-template-rows: 5% [intro]1fr [details]1fr;
+}
+
+//intro (top) section
+.intro{
+    grid-column: content;
+    grid-row: intro;
+    display: grid;
+    grid-template-columns: [profile]242px [intro]3fr [links]5%;
+}
+
+.intro img{
+    grid-column: profile;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1{
+    padding: $sp-4xs $sp-xxs;
+    grid-column: intro;
+    @include heading-text;
+    line-height: 2.5rem;
+}
+
+.links{
+    grid-column: links;
+    display: grid;
+    grid-template-rows: 5% [link1]35px [link2]35px [link3]35px [link4]25px;  
+}
+
+.link1{
+    grid-row: link1;
+    justify-self: center;
+}
+
+.link2{
+    grid-row: link2;
+    justify-self: center;
+}
+
+.link3{
+    grid-row: link3;
+    justify-self: center;
+}
+
+.link4{
+    grid-row: link4;
+    justify-self: center;
+}
+
+//details (bottom) section
+.details{
+    grid-column: content;
+    grid-row: details;
+    display: grid;
+    grid-template-columns: [blobs]1fr [find]1fr [folders]1fr;
+}
+
+
+.blobs{
+    grid-column: blobs;
+    padding: $sp-s $sp-xxs 0px $sp-xxs;
+
+    h2::before{
+        content: url(src\assets\aboutAssets\blob.svg);
+    }
+}
+
+.find{
+    grid-column: find;
+    padding: $sp-s $sp-xxs 0px $sp-xxs;
+    h2::before{
+        content: url(src\assets\aboutAssets\place.svg);
+    }
+}
+
+.folders{
+    grid-column: folders;
+    padding: $sp-s 0px 0px $sp-xxs;
+    h2::before{
+        content: url(src\assets\aboutAssets\folder.svg);
+    }
+}
+
+h2{
+    @include paragraph-text;
+    font-family: $secondary-font;
+    font-weight: 600;
+    padding-bottom: $sp-4xs;
+}
+
+p{
+    @include paragraph-text;
+    font-family: $secondary-font;
+    line-height: 2rem;
+}
+
+.folders p{
+    font-family: 'Roboto Mono';
+    font-size: 16;
+}

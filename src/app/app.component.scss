@@ -1,0 +1,77 @@
+/* Style the header with a grey background and some padding */
+@import "src/styles.scss";
+
+// * {background-color: $background}
+
+.header {
+  overflow: hidden;
+  height: 10vh;
+  // padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  @include paragraph-text;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 0px;
+}
+
+.header a.logo:hover {  
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  color: $dark;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-image: url('/assets/images/ogblob.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: $dark;
+  // padding: 10px;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+
+@keyframes floating {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 10px); }
+  to   { transform: translate(0, -0px); }    
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
