@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { VirtualBranchSupportComponent } from './projects/virtual-branch-support/virtual-branch-support.component';
 import { WaivethewaitComponent } from './projects/waivethewait/waivethewait.component';
 import { CheckrComponent } from './projects/checkr/checkr.component';
+import { FilterComponent } from './projects/filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CheckrComponent } from './projects/checkr/checkr.component';
     AboutComponent,
     VirtualBranchSupportComponent,
     WaivethewaitComponent,
-    CheckrComponent
+    CheckrComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { VirtualBranchSupportComponent } from './projects/virtual-branch-support/virtual-branch-support.component';
 import { WaivethewaitComponent } from './projects/waivethewait/waivethewait.component';
 import { CheckrComponent } from './projects/checkr/checkr.component';
+import { FilterComponent } from './projects/filter/filter.component';
 
 const routes: Routes = [
 
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'work/virtual-branch-support', component: VirtualBranchSupportComponent },
   { path: 'work/waivethewait', component: WaivethewaitComponent },
   { path: 'work/checkr', component: CheckrComponent },
+  { path: 'work/filter', component: FilterComponent },
   { path: 'about', component: AboutComponent },
 ];
 

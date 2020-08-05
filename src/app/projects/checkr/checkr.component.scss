@@ -1,4 +1,7 @@
 @import "src/styles.scss";
+strong{
+    font-weight: $bold;
+}
 
 h1{
     @include work-title;

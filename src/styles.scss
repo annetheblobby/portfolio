@@ -81,7 +81,7 @@ $tech-font: 'Roboto Mono';
 @mixin title-text{
     font-size: $font-lg;
     color: $dark-grey;
-    font-family: $primary-font;
+    font-family: $secondary-font;
     font-weight: $regular;
     line-height: 2.8rem;
 }
@@ -94,7 +94,7 @@ $tech-font: 'Roboto Mono';
 @mixin heading-text{
     font-size: 24px;
     color: $dark-grey;
-    font-family: $primary-font;
+    font-family: $secondary-font;
     font-weight: $regular; 
 }
 
@@ -103,6 +103,7 @@ $tech-font: 'Roboto Mono';
     color: $dark-grey;
     font-family: $secondary-font;
     font-weight: $regular;
+    
 }
 
 @mixin label{

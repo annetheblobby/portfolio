@@ -1,5 +1,9 @@
 @import "src/styles.scss";
 
+strong{
+    font-weight: $bold;
+}
+
 h1{
     @include work-title;
     margin-bottom: 0.5em;
@@ -30,6 +34,10 @@ p{
 
 .block{
     padding-bottom: 20px;
+}
+
+.block-sm{
+    padding-bottom: 5px;
 }
 
 .page-body{

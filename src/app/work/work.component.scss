@@ -6,9 +6,13 @@
   // background-color: $background;
 }
 
+.body{
+  margin-bottom: 10%;;
+}
+
 //text
 h1{
-    padding: $sp-l 0 $sp-m 16px;
+    padding: $sp-l 0 $sp-xxl 16px;
     display: block;
     width:60%;
     margin: auto;
@@ -88,12 +92,12 @@ input[type="radio"] {
    
   .posts {
     display: grid;
-    
     row-gap: 1.5rem;
     column-gap: 0.2rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: min-content;
     padding-inline-start: 0px;
+    padding-bottom: $sp-xxl;
   }
    
   .posts .post {
