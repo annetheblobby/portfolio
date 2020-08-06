@@ -78,18 +78,9 @@ p{
     }
 }
 
-.brief{
-    // display: grid;
-    // grid-template-columns: [listen]1fr 1fr 1fr;
-    // background-color: $tint;
-    margin: 0px -9999rem 0px;
-    padding: 0.25rem 9999rem;
-    
-    img{
-        max-width: 100%;
-        height: auto;
-    }
-
+.brief img{
+    max-width: 100%;
+    height: auto;
 }
 
 .process{

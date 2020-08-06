@@ -1,14 +1,15 @@
 <!-- TODO:loading bar -->
 <div class= "site">
-<div class="header">
-  <a href="#default" class="logo floating"><img src="assets/images/logo.svg" alt="logo" /></a>
-  <div class="header-right">
-    <a routerLink="/work" routerLinkActive="active">Work</a>
-    <a routerLink="/about" routerLinkActive="active">About</a>
-    <!-- <a href="#contact">Experiments</a> -->
-    <a href="assets/resume_UX2020_Aug.pdf" target="_blank">Resume</a>
+  <div class="header">
+    <a href="#default" class="logo floating"><img src="assets/images/logo.svg" alt="logo" /></a>
+    <div class="header-right">
+      <a routerLink="/work" routerLinkActive="active">Work</a>
+      <a routerLink="/about" routerLinkActive="active">About</a>
+      <!-- <a href="#contact">Experiments</a> -->
+      <a href="assets/resume_UX2020_Aug.pdf" target="_blank">Resume</a>
+    </div>
   </div>
-  
-</div>
-<router-outlet></router-outlet>
+  <div class="body">
+  <router-outlet></router-outlet>
+  </div>
 </div>

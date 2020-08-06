@@ -11,10 +11,10 @@ const routes: Routes = [
 
   { path: '', redirectTo: '/work', pathMatch: 'full' },
   { path: 'work', component: WorkComponent },
-  { path: 'work/virtual-branch-support', component: VirtualBranchSupportComponent },
-  { path: 'work/waivethewait', component: WaivethewaitComponent },
-  { path: 'work/checkr', component: CheckrComponent },
-  { path: 'work/filter', component: FilterComponent },
+  { path: 'virtual-branch-support', component: VirtualBranchSupportComponent },
+  { path: 'waivethewait', component: WaivethewaitComponent },
+  { path: 'checkr', component: CheckrComponent },
+  { path: 'filter', component: FilterComponent },
   { path: 'about', component: AboutComponent },
 ];
 

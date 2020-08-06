@@ -2,10 +2,17 @@
 @import "src/styles.scss";
 
 // * {background-color: $background}
+.body{
+  padding-top: 10vh;
+}
 
 .header {
   overflow: hidden;
   height: 10vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(255,255,255,0.95)
   // padding: 20px 10px;
 }
 
@@ -26,7 +33,7 @@
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
-  padding: 0px;
+  padding: 2px 0px 0px 8px;
 }
 
 .header a.logo:hover {  
@@ -43,10 +50,10 @@
 
 /* Style the active/current link*/
 .header a.active {
-  background-image: url('/assets/images/ogblob.svg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  // background-image: url('/assets/images/ogblob.svg');
+  // background-size: contain;
+  // background-position: center;
+  // background-repeat: no-repeat;
   color: $dark;
   // padding: 10px;
 }
@@ -54,6 +61,7 @@
 /* Float the link section to the right */
 .header-right {
   float: right;
+  padding: 8px 24px 0px 0px;
 }
 
 
