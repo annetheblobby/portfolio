@@ -9,7 +9,8 @@
       <a href="assets/resume_UX2020_Aug.pdf" target="_blank">Resume</a>
     </div>
   </div>
-  <div class="body">
-  <router-outlet></router-outlet>
-  </div>
+  <main [@fadeAnimation]="getRouterOutletState(o)" class="body">
+    <router-outlet #o="outlet"></router-outlet>
+  </main>
 </div>
+
