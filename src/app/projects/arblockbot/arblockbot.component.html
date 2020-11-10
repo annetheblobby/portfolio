@@ -1,0 +1,80 @@
+
+<div class="page-body">
+    <h1 data-aos="fade-left">ARBlockbot</h1>
+    <div class="info">
+        <p><strong>Context</strong><br>VR AR Design Project</p>
+        <p><strong>Team</strong><br>Kevin Feng, Daniel Martin, Anjali Thatte</p>
+        <p><strong>Role</strong><br>Interface design/development </p>
+        <p><strong>Tools</strong><br>Figma, Unity</p>
+    </div>
+    <img class="full-screen" src="assets/projects/arblockbot/arblockbotcover.png">
+    <h2>Brief</h2>
+    <div class="brief">
+        <img src="assets/projects/arblockbot/brief.svg">
+    </div>
+
+    <div class="category">
+        <h3>Listen.</h3>
+        <h4>It's hard to beat the learning curve</h4>
+        <p>There are many roadblocks for those who wish to learn robotics. From the start of their journey, they will need the necessary equipment which may be extremely pricey. Once the robot arrives, the user will not just need to learn how to code for robotics but also connect the robot to the code. They must then fix the robot if any mechanical faults occur that may not even be a problem with the code. </p>
+        <h4>Robotics can be more accessible</h4>
+        <p>BlockBot is an educational learning application that leverages Augmented Reality to teach children (or even adults) how to program in an interactive and user friendly environment. Students place colored puzzle blocks of code segments together with the goal of generating robot movements. They can then easily simulate their programmed robot in their own rooms through the mixed reality AR camera, where the robot interacts with real world items captured in the camera frame. This application enriches the remote learning experience as it allows students to learn robotics and coding from the comfort of their own homes without any robotics equipment.</p>
+        
+        <iframe class="centered-md" src="https://player.vimeo.com/video/427623490" width="640" height="1321" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <p><a href="https://vimeo.com/427623490">Circles Demo &ndash; ARBlockbot</a> from <a href="https://vimeo.com/user95677991">Kevin Feng</a> on <a href="https://vimeo.com">Vimeo</a>.</p> 
+        
+    
+    </div>
+    <div class="category">
+    <h3>Reshape.</h3>
+        <h4>Who will benefit?</h4>
+        <p>We wanted to define the traits and goals of the end user of the product. Our primary persona Zara goes to a school that is underfunded in the robotics department. However, she still would like to get involved.</p>
+        <img class="centered" src="assets/projects/arblockbot/persona.png">
+        <p class="block"></p>
+        <h4>The Design Process</h4>
+        <p>Accessibility is a roadblock for students and schools that may not have the resources available to purchase and maintain machinery. Students need to physically at the school, which makes it impossible for robotics to taught remotely or be introduced in online programs. </p>
+        <p>The process of learning robotics is additionally inaccessible. The difficult task of debugging and fixing robot components deter beginners from even starting to work on any projects. When testing the code on the robot, difficulties such as the wiring of code to the robot may take time away from actually learning and drain joy away from the creative process.</p>
+        <p>Blockbot addresses these roadblocks. To strip away the costs of machinery, we leveraged the features of mixed reality, which allows us to create a robot the student can manipulate and interact with the real environment such as walls and surfaces, imitating the real experience of testing a robot in the room. </p>
+        <p>We wanted students to easily create code that could influence the robot to decrease the large learning curve of learning coding and robotics. Block-based code programs inspired us to create an interface that focused on simple building blocks as an introductory coding tool.</p>
+        <p>Quick iterations of creating the code and being able to test it immediately allow users to learn faster and be more engaged by the learning process.</p>
+        <img class="centered" src="assets/projects/arblockbot/codeorg.png">
+        <p><em>A sample of a block based programming game on code.org</em></p>
+    </div>
+
+    <div class="category">
+        <h3>Create.</h3>
+        <h4>Implementation strategy</h4>
+        <p>We used Blockly's coding library to create blocks that would snap together as building block code instructions we would execute on the robot. We refactored the Javascript Blockly code into C# code that would be consumable by Unity. 
+
+            The below diagram details the coding block system that was used.</p>
+        <img class="centered" src="assets/projects/arblockbot/diagram.png">
+        <h4>The student's learning process </h4>
+        <p>To address the concerns of the user, we constructed a solution that used block-based visual coding to dictate movement of a robot in the AR world. The user pulls and snaps together blocks in the editor interface which allows learning in a playful manner. The system proceeds to run the code and the robot will move according to the instructions given in the blocked code. The robot would be able to interact with planes in the real world, for instance, being able to fall off tables and chairs. </p>
+        <h4>Learning in situ</h4>
+        <p>We wanted students to learn code that actually involves robotics instead of solely moving the robot in a certain direction on the plane. This means that the code is specialized to interact with the actual engine, for instance, being able to set the throttle of the to a certain speed to propel the robot.</p>
+        <h4>Rapid Designing</h4>
+        <p>Under immense time pressure, we created a rapid prototype. We then improved on the initial UI on a second iteration by prioritizing how students would use a phone screen. For instance, the coding canvas is hidden and revealed by dragging a tab up and downwards which is more intuitive for phone users and easier for smaller sized hands. Increasing space between blocks also helped users precisely select the block they needed (this also meant adding a horizontal scroll for browsing the possible blocks in each category, organized by the type of usage in coding). </p>
+        <div class="three-grid">
+            <img src="assets/projects/arblockbot/UI1.gif">
+            <img src="assets/projects/arblockbot/UI2.gif">
+            <img src="assets/projects/arblockbot/UI3.gif">
+        </div>
+        <p>We conducted AB testing on the designs to compare the features of the two iterations. The results indicated that our new UI was a better interface.</p>
+        <img class="centered" src="assets/projects/arblockbot/usertesting.png">
+    <div class="category">
+        <h3>Reflections.</h3>
+        <h4>Challenges</h4>
+        <p><b>Technical Challenges</b></p>
+        <p>Blockly, our coding block library, was not compatible with Unity or C# so we implemented our custom code blocks which took time to implement</p>
+        <p><b>Time constraint and remote project work</b></p>
+        <p>This four month project was based in Singapore, and when we first planned a project, we had another completely different idea that needed Head Mounted Displays because it was a VR project. When the Coronavirus pandemic hit three months into the project, we needed to evacuate to our respective countries and lost access to the equipment available. Within less than a month, we ideated, created and tested this product that was meant to be a 4 month project. </p>
+        <h4>Futuring</h4>
+        <p>Some features were planned as stretch goals because of the time limit for implementation but will be implemented in the future to further the user's experience.</p>
+        <p><b>Learning for all skill levels</b></p>
+        <p>How can we engage students after they have mastered coding on the robotic platform? We wanted to implement a game overlay where the robot has a designed path and finish location it has to reach. The user must code the robot to arrive at that destination. These levels will slowly get harder and will push the user to become a better programmer while enjoying the game experience.</p>
+        <img class="centered-sm" src="assets/projects/arblockbot/nextsteps.png">
+        <p><b>taking robotics to the next level</b></p>
+        <p>We also thought about connecting friends and allowing two users to place their robots in the same location scene so that they can battle their robots and see who can win or alternatively make the robots dance together. A collaborative environment allows for more creative scenarios for the users to program.</p>
+    </div>
+    <a class="next" routerLink="/filter">Next work -></a>
+</div>

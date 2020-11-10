@@ -36,13 +36,6 @@ p{
     padding-bottom: 20px;
 }
 
-.page-body{
-    width: 50%;
-    // margin-left: auto;
-    // margin-right: auto;
-    margin: auto auto 10% auto;
-}
-
 .info{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -86,7 +79,7 @@ p{
 .process{
     margin: $sp-l 0px;
     display: block;
-    width: 100%;
+    width: 100% !important;
 }
 
 .full-width{

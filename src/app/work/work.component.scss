@@ -12,12 +12,13 @@
 
 //text
 h1{
-    padding: $sp-l 0 $sp-xxl 16px;
+    padding: $sp-l 0 120px 16px;
     display: block;
     width:50%;
     margin: auto;
     @include title-text;
 }
+
 
 //title styling
 h1 a{

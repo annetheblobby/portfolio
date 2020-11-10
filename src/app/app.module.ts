@@ -10,6 +10,8 @@ import { VirtualBranchSupportComponent } from './projects/virtual-branch-support
 import { WaivethewaitComponent } from './projects/waivethewait/waivethewait.component';
 import { CheckrComponent } from './projects/checkr/checkr.component';
 import { FilterComponent } from './projects/filter/filter.component';
+import { ArblockbotComponent } from './projects/arblockbot/arblockbot.component';
+import { CompsaComponent } from './projects/compsa/compsa.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { FilterComponent } from './projects/filter/filter.component';
     VirtualBranchSupportComponent,
     WaivethewaitComponent,
     CheckrComponent,
-    FilterComponent
+    FilterComponent,
+    ArblockbotComponent,
+    CompsaComponent
   ],
   imports: [
     BrowserModule,

@@ -40,13 +40,6 @@ p{
     padding-bottom: 5px;
 }
 
-.page-body{
-    width: 50%;
-    // margin-left: auto;
-    // margin-right: auto;
-    margin: auto auto 10% auto;
-}
-
 .info{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -104,3 +97,17 @@ p{
 blockquote{
     @include quote-text;
 }
+
+[aos="fade"] {
+    opacity: 0;
+    transition-property: opacity;
+}
+  
+[aos="fade"].aos-animate {
+    opacity: 1;
+}
+
+
+
+$aos-distance: 50px; // It has to be above import
+@import 'node_modules/aos/src/sass/aos.scss';

@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
+
 // spacing
 $sp-6xs: 12px;
 $sp-5xs: 12px;
@@ -44,11 +45,93 @@ $primary-font: 'Roboto Mono';
 $secondary-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 $tech-font: 'Roboto Mono';
 
+// width formatting
+.page-body{
+    width: 45%;
+    // margin-left: auto;
+    // margin-right: auto;
+    margin: auto auto 10% auto;  
+}
+
+.full-screen{
+    width: 99vw;
+    position: relative;
+    left: 49%;
+    right: 49%;
+    margin-left: -49vw;
+    margin-right: -49vw; 
+    margin: $sp-l -49vw $sp-xl -49vw; 
+}
+
+.centered-md{
+    margin: $sp-l auto $sp-l auto;
+    display: block;
+    width: 60%;  
+}
+
+.centered{
+    margin: $sp-l auto $sp-l auto;
+    display: block;
+    width: 95%;  
+}
+
+.centered-sm{
+    margin: $sp-l auto $sp-l auto;
+    display: block;
+    width: 20%;  
+}
+
+.two-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    img:nth-of-type(1){
+        grid-column: 1;
+        // margin-right: $sp-s;   
+    } 
+    img:nth-of-type(2){
+        grid-column: 2;
+        // margin-right: $sp-s;  
+    } 
+}
+
+.three-grid{
+    margin: $sp-l 0px $sp-l 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    img:nth-of-type(1){
+        grid-column: 1;
+        // margin-right: $sp-s;   
+    } 
+    img:nth-of-type(2){
+        grid-column: 2;
+        // margin-right: $sp-s;  
+    } 
+    img:nth-of-type(3){
+        grid-column: 3;
+        // margin-right: $sp-s;  
+    }
+}
+
+.next{
+    font-family: $tech-font;
+    font-size: $font-md;
+    display: block;
+    text-align: center; 
+    text-decoration: none;
+    color: black;
+    margin-top: $sp-xxl;
+    
+}
+
+.next:hover{
+    color: $dark;
+}
+
 @mixin work-title{
     font-size: 80px;
     color: $dark-grey;
     font-family: $secondary-font;
-    font-weight: $regular;
+    font-weight: $bold;
 }
 
 @mixin category-text{
@@ -64,8 +147,9 @@ $tech-font: 'Roboto Mono';
 }
 
 @mixin work-subtitle{
+    
     font-family: $secondary-font;
-    font-size: $font-lg;
+    font-size: $font-xl;
     color: $dark-grey;
     font-weight: $bold;
 }
@@ -79,11 +163,11 @@ $tech-font: 'Roboto Mono';
 }
 
 @mixin title-text{
-    font-size: $font-lg;
+    font-size: $font-xl;
     color: $dark-grey;
     font-family: $secondary-font;
     font-weight: $regular;
-    line-height: 2.8rem;
+    line-height: 3.5rem;
 }
 
 @mixin title-text-colored{

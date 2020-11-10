@@ -6,6 +6,8 @@ import { VirtualBranchSupportComponent } from './projects/virtual-branch-support
 import { WaivethewaitComponent } from './projects/waivethewait/waivethewait.component';
 import { CheckrComponent } from './projects/checkr/checkr.component';
 import { FilterComponent } from './projects/filter/filter.component';
+import { ArblockbotComponent } from './projects/arblockbot/arblockbot.component';
+import { CompsaComponent } from './projects/compsa/compsa.component';
 
 const routes: Routes = [
 
@@ -16,6 +18,8 @@ const routes: Routes = [
   { path: 'checkr', component: CheckrComponent },
   { path: 'filter', component: FilterComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'arblockbot', component: ArblockbotComponent },
+  { path: 'compsa', component: CompsaComponent }
 ];
 
 @NgModule({
