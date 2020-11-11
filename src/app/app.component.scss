@@ -3,16 +3,17 @@
 
 // * {background-color: $background}
 .body{
-  padding-top: 10vh;
+  padding-top: 85px;
 }
 
 .header {
+  z-index: 300;
   overflow: hidden;
-  height: 85px;
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgb(255,255,255)
+  height: 85px;
+  background-color: rgb(255,255,255,0.85)
   // padding: 20px 10px;
 }
 

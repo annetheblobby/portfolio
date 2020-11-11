@@ -1,0 +1,145 @@
+@import "src/styles.scss";
+
+* {
+  padding:0px;
+  margin:0px;
+  // background-color: $background;
+}
+
+.body{
+  margin-bottom: 10%;;
+}
+
+//text
+h1{
+    padding: $sp-l 0 120px 16px;
+    display: block;
+    width:50%;
+    margin: auto;
+    @include title-text;
+}
+
+
+//title styling
+h1 a{
+  color: $dark;
+}
+
+a:first-of-type{
+  font-weight: $bold;
+}
+
+a{
+  text-decoration: none;
+  color: $dark-grey;
+}
+
+h2:hover{
+    color: black;
+}
+
+.post-title{
+  padding-top: $sp-xs;
+  padding-bottom: $sp-6xs; 
+  text-align: center;
+  @include paragraph-text;
+  font-weight: $medium;
+}
+
+
+p{
+  padding-bottom: $sp-l;
+  text-align: center;
+  @include label;
+}
+
+//hide radio button visuals
+input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+  }
+
+  .filters {
+    display: block;
+    width:60%;
+    margin: auto;
+    padding-bottom: $sp-xxs;
+    @include paragraph-text-colored;
+    font-weight: $medium;
+
+  }
+   
+  .filters * {
+    display: inline-block;
+  }
+   
+  .filters label {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.25rem;
+    border-radius: 2rem;
+    min-width: 50px;
+    line-height: normal;
+    cursor: pointer;
+    transition: all 0.1s;
+  }
+   
+  .filters label:hover, h1 a:hover {
+    // background: rgb(168, 193, 207);
+    color: #0b666b;
+  }
+
+  //CSS Grid
+  :root {
+    --black: #1a1a1a;
+    --white: #fff;
+    --green: #49b293;
+  }
+   
+  .posts {
+    display: grid;
+    row-gap: 1.5rem;
+    column-gap: 0.2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content;
+    padding-inline-start: 0px;
+    padding-bottom: $sp-xxl;
+  }
+   
+   
+  .posts .post-title:hover {
+    font-weight: $bold;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  img:hover{
+    filter: brightness(80%);
+  }
+   
+  @media screen and (max-width: 900px) {
+    .posts {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+   
+  @media screen and (max-width: 650px) {
+    .posts {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  [value="#All"]:checked ~ .posts [data-category] {
+    display: block;
+  }
+
+[value="#ProductDesign"]:checked ~ .posts .post:not([data-category~="#ProductDesign"]),
+[value="#AugmentedReality"]:checked ~ .posts .post:not([data-category~="#AugmentedReality"]),
+[value="#Health"]:checked ~ .posts .post:not([data-category~="#Health"]),
+[value="#Community"]:checked ~ .posts .post:not([data-category~="#Community"]){
+  display: none;
+
+}

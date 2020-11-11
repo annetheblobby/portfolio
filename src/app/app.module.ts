@@ -12,6 +12,13 @@ import { CheckrComponent } from './projects/checkr/checkr.component';
 import { FilterComponent } from './projects/filter/filter.component';
 import { ArblockbotComponent } from './projects/arblockbot/arblockbot.component';
 import { CompsaComponent } from './projects/compsa/compsa.component';
+import { FunComponent } from './fun/fun.component';
+import { PaperComponent } from './fun/funProjects/paper/paper.component';
+import { ShadowPuppetryComponent } from './fun/funProjects/shadow-puppetry/shadow-puppetry.component';
+import { LighthouseComponent } from './fun/funProjects/lighthouse/lighthouse.component';
+import { CsearchComponent } from './fun/funProjects/csearch/csearch.component';
+import { SketchComponent } from './fun/funProjects/sketch/sketch.component';
+import { VectorComponent } from './fun/funProjects/vector/vector.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +30,14 @@ import { CompsaComponent } from './projects/compsa/compsa.component';
     CheckrComponent,
     FilterComponent,
     ArblockbotComponent,
-    CompsaComponent
+    CompsaComponent,
+    FunComponent,
+    PaperComponent,
+    ShadowPuppetryComponent,
+    LighthouseComponent,
+    CsearchComponent,
+    SketchComponent,
+    VectorComponent
   ],
   imports: [
     BrowserModule,
