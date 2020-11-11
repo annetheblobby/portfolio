@@ -98,16 +98,3 @@ blockquote{
     @include quote-text;
 }
 
-[aos="fade"] {
-    opacity: 0;
-    transition-property: opacity;
-}
-  
-[aos="fade"].aos-animate {
-    opacity: 1;
-}
-
-
-
-$aos-distance: 50px; // It has to be above import
-@import 'node_modules/aos/src/sass/aos.scss';
