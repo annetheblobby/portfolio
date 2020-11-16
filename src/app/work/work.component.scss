@@ -132,6 +132,11 @@ input[type="radio"] {
     .posts {
       grid-template-columns: repeat(1, 1fr);
     }
+
+    h1{
+      width: 80%;
+      font-size: $sp-s !important;
+    }
   }
 
   [value="#All"]:checked ~ .posts [data-category] {
