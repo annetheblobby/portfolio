@@ -110,3 +110,45 @@ p{
     font-family: 'Roboto Mono';
     font-size: 16;
 }
+
+@media screen and (max-width: 650px){
+    img{
+        display: block;
+        margin: auto;
+        padding-bottom: $sp-s;
+    }
+    .about-section{
+        margin-bottom: $sp-l !important;
+    }
+    .about-section, .intro, .details{
+        display: block
+    }
+
+    .intro h1{
+        font-size: $sp-xs !important;
+        text-align: center;
+    }
+
+    .links{
+        margin: $sp-a 0 $sp-a;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: [link1]1fr [link2]1fr [link3]1fr [link4]1fr;  
+    }
+
+    .link1{
+        grid-column: link1;
+    }
+
+    .link2{
+        grid-column: link2;
+    }
+
+    .link3{
+        grid-column: link3;
+    }
+
+    .link4{
+        grid-column: link4;
+    }
+}
