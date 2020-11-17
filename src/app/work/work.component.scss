@@ -134,8 +134,10 @@ input[type="radio"] {
     }
 
     h1{
+      line-height: 40px;
       width: 80%;
-      font-size: $sp-s !important;
+      font-size: $sp-xs !important;
+      padding: $sp-s 0 $sp-s;
     }
   }
 
