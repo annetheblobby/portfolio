@@ -19,6 +19,7 @@ import { LighthouseComponent } from './fun/funProjects/lighthouse/lighthouse.com
 import { CsearchComponent } from './fun/funProjects/csearch/csearch.component';
 import { SketchComponent } from './fun/funProjects/sketch/sketch.component';
 import { VectorComponent } from './fun/funProjects/vector/vector.component';
+import { NextspaceComponent } from './fun/funProjects/nextspace/nextspace.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { VectorComponent } from './fun/funProjects/vector/vector.component';
     LighthouseComponent,
     CsearchComponent,
     SketchComponent,
-    VectorComponent
+    VectorComponent,
+    NextspaceComponent
   ],
   imports: [
     BrowserModule,

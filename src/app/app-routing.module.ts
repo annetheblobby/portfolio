@@ -15,6 +15,7 @@ import { LighthouseComponent } from './fun/funProjects/lighthouse/lighthouse.com
 import { CsearchComponent } from './fun/funProjects/csearch/csearch.component';
 import { SketchComponent } from './fun/funProjects/sketch/sketch.component';
 import { VectorComponent } from './fun/funProjects/vector/vector.component';
+import { NextspaceComponent } from './fun/funProjects/nextspace/nextspace.component';
 
 const routes: Routes = [
 
@@ -33,7 +34,8 @@ const routes: Routes = [
   { path: 'lighthouse', component: LighthouseComponent },
   { path: 'csearch', component: CsearchComponent },
   { path: 'sketch', component: SketchComponent },
-  { path: 'vector', component: VectorComponent }
+  { path: 'vector', component: VectorComponent },
+  { path: 'nextSpace', component: NextspaceComponent }
 
   
 ];
