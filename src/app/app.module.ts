@@ -20,6 +20,8 @@ import { CsearchComponent } from './fun/funProjects/csearch/csearch.component';
 import { SketchComponent } from './fun/funProjects/sketch/sketch.component';
 import { VectorComponent } from './fun/funProjects/vector/vector.component';
 import { NextspaceComponent } from './fun/funProjects/nextspace/nextspace.component';
+import { VoltaComponent } from './projects/volta/volta.component';
+import { TogetherapartComponent } from './projects/togetherapart/togetherapart.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { NextspaceComponent } from './fun/funProjects/nextspace/nextspace.compon
     CsearchComponent,
     SketchComponent,
     VectorComponent,
-    NextspaceComponent
+    NextspaceComponent,
+    VoltaComponent,
+    TogetherapartComponent
   ],
   imports: [
     BrowserModule,

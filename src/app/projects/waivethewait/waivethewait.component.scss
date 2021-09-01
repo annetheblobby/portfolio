@@ -4,6 +4,14 @@ strong{
     font-weight: $bold;
 }
 
+a{
+    @include paragraph-text;
+    color: $dark;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
 h1{
     @include work-title;
     margin-bottom: 0.5em;
@@ -97,4 +105,3 @@ p{
 blockquote{
     @include quote-text;
 }
-
